@@ -3,12 +3,18 @@ const theadData = ['n','2^n-1の個数','数列','最大値'];
 const max_at_all = 1;
 const data = [];
 let res = [];
+for(let i = 1;i<= MAX;i++){
+  res = col(i);
+  data.push(res);
+}
+/*
 let i = 10000;
 while(res[1] !== 3){
   res = col(i);
   data.push(res);
   i++;
 }
+*/
 const table = document.createElement('table');
 const thead = document.createElement('thead');
 theadData.forEach((thData)=>{
