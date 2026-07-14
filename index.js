@@ -1,9 +1,19 @@
 const MAX = 5;
-const data = [['n','2^n-1の個数','数列','最大値']];
+const theadData = ['n','2^n-1の個数','数列','最大値'];
+const data = [];
 for(let i = 1;i <= MAX;i++){
   data.push(col(i));
 }
 const table = document.createElement('table');
+const thead = document.createElement('thead');
+theadData.forEach((thData)=>{
+  const th = document.createElement('th');
+  th.textContent = thData;
+  thead.append(th);
+});
+table.append(thead);
+
+const tbody = document.createElement('tbody');
 data.forEach((rowData)=>{
   const tr = document.createElement('tr');
   rowData.forEach((cellData)=>{
@@ -11,8 +21,9 @@ data.forEach((rowData)=>{
     td.textContent = cellData;
     tr.append(td);
   });
-  table.append(tr);
+  tbody.append(tr);
 });
+table.append(tbody);
 document.querySelector('#el').append(table);
 
 
