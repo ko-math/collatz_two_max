@@ -1,4 +1,4 @@
-const MAX = 5;
+const MAX = 100;
 const theadData = ['n','2^n-1の個数','数列','最大値'];
 const max_at_all = 1;
 const data = [];
