@@ -1,8 +1,19 @@
-const MAX = 100;
+const MAX = 5;
 const data = [];
 for(let i = 1;i <= MAX;i++){
   data.push(col(i));
 }
+const table = document.createElement('table');
+data.forEach((rowData)=>{
+  const tr = document.createElement('tr');
+  rowData.forEach((cellData)=>{
+    const td = document.createElement('td');
+    td.textContent = cellData;
+    tr.append(td);
+  });
+  table.append(tr);
+});
+document.querySelector('#el').append(table);
 
 
 function col(n){
@@ -24,5 +35,3 @@ function col(n){
   sq.push(1);
   return [n,two,sq,max];
 }
-
-window.alert(col(5));
