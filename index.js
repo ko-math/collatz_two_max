@@ -1,5 +1,5 @@
 const MAX = 5;
-const data = [];
+const data = [['n','2^n-1の個数','数列','最大値']];
 for(let i = 1;i <= MAX;i++){
   data.push(col(i));
 }
