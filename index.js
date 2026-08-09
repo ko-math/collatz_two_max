@@ -7,14 +7,14 @@ let res = [];
 
 const findMerc = 2;
 let find = 0;
-let me = 0;
+let me = '';
 for(let i = MIN;i <= MAX;i++){
   res = col(i);
   if(res[1] === findMerc)find++;
   data.push(res);
 }
 
-alert(find + ',' + me);
+alert(find + '\n' + me);
 /*
 let i = 10000;
 let ch2 = 0;
@@ -58,7 +58,7 @@ function col(n){
     sq.push(i);
     if(Math.ceil(Math.log2(i + 1)) === Math.log2(i + 1)){
       two++;
-      if(n < i)me++;
+      if(n < i)me += n;
     }
     if(i > max)max = i;
     if(i % 2 === 0){
