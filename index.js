@@ -5,7 +5,7 @@ const max_at_all = 1;
 const data = [];
 let res = [];
 
-const findMerc = 2;
+const findMerc = 3;
 let find = 0;
 let me = '';
 for(let i = MIN;i <= MAX;i++){
