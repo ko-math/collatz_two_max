@@ -5,16 +5,16 @@ const max_at_all = 1;
 const data = [];
 let res = [];
 
-const findMerc = 1;
+const findMerc = 2;
 let find = 0;
-
+let me = 0;
 for(let i = MIN;i <= MAX;i++){
   res = col(i);
   if(res[1] === findMerc)find++;
   data.push(res);
 }
 
-alert(find);
+alert(find + ',' + me);
 /*
 let i = 10000;
 let ch2 = 0;
@@ -56,7 +56,10 @@ function col(n){
   let max = i;
   while(i !== 1){
     sq.push(i);
-    if(Math.ceil(Math.log2(i + 1)) === Math.log2(i + 1))two++;
+    if(Math.ceil(Math.log2(i + 1)) === Math.log2(i + 1)){
+      two++;
+      if(n < i)me++;
+    }
     if(i > max)max = i;
     if(i % 2 === 0){
       i /= 2;
