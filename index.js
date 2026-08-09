@@ -1,9 +1,10 @@
-const MAX = 905;
+const MIN = 2;
+const MAX = 10000;
 const theadData = ['n','2^n-1の個数','数列','最大値'];
 const max_at_all = 1;
 const data = [];
 let res = [];
-for(let i = 613;i<= MAX;i++){
+for(let i = MIN;i <= MAX;i++){
   res = col(i);
   data.push(res);
 }
