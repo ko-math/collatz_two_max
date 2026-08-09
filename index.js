@@ -14,7 +14,7 @@ for(let i = MIN;i <= MAX;i++){
   data.push(res);
 }
 
-alert(find + '\n' + me);
+alert(find + '\n\n' + me);
 /*
 let i = 10000;
 let ch2 = 0;
@@ -58,7 +58,7 @@ function col(n){
     sq.push(i);
     if(Math.ceil(Math.log2(i + 1)) === Math.log2(i + 1)){
       two++;
-      if(n < i)me += n;
+      if(n < i)me += n + '\n';
     }
     if(i > max)max = i;
     if(i % 2 === 0){
