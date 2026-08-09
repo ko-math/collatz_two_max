@@ -6,7 +6,7 @@ const data = [];
 let res = [];
 
 const findMerc = 1;
-const find = 0;
+let find = 0;
 
 for(let i = MIN;i <= MAX;i++){
   res = col(i);
